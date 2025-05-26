@@ -8,6 +8,15 @@ plugins {
     application
     id("io.freefair.lombok") version "8.13.1"
     id("com.github.ben-manes.versions") version "0.52.0"
+    id("org.sonarqube") version "6.2.0.5505"
+}
+
+sonarqube {
+    properties {
+        property("sonar.projectKey", "xcenia9_java-project-78")
+        property("sonar.organization", "xcenia9")
+        property("sonar.host.url", "https://sonarcloud.io")
+    }
 }
 
 group = "hexlet.code"
